@@ -17,9 +17,11 @@ done
 if [ $head_count -gt $tail_count ]
 then
    echo "Head win "
+   echo "Head won by "$((head_count - $tail_count))
 elif [ $tail_count -gt $head_count ]
 then
    echo "Tail win "
+   echo "Tail won by "$((tail_count - $head_count))
 else
    echo "Tie" 
 fi 
